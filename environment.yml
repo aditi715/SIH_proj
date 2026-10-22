@@ -1,0 +1,18 @@
+name: ragexcel
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - pyarrow=15.0.2
+  - scikit-learn=1.4.2
+  - streamlit
+  - pip:
+      - sentence-transformers==2.7.0
+      - llama-index-core==0.10.54
+      - llama-index-llms-gemini==0.2.2
+      - llama-index-embeddings-huggingface==0.2.3
+      - llama-index-readers-docling==0.1.5
+      - llama-index-node-parser-docling==0.1.5

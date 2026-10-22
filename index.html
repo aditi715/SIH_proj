@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INGRES AI Groundwater Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>INGRES — AI Groundwater Chatbot</h1>
+
+    <div class="controls">
+      <select id="language">
+        <option value="en">English</option>
+        <option value="hi">हिंदी</option>
+        <option value="mr">मराठी</option>
+        <option value="ta">தமிழ்</option>
+      </select>
+      <button id="voiceBtn">🎤 Speak</button>
+    </div>
+
+    <div id="messages"></div>
+
+    <textarea id="userInput" placeholder="Ask about groundwater..."></textarea>
+    <button id="sendBtn">Send</button>
+
+    <div class="chart-section">
+      <h3>Groundwater Recharge & Extraction</h3>
+      <canvas id="chart"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

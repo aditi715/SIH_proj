@@ -1,0 +1,8 @@
+streamlit
+pandas
+openpyxl
+llama-index-core
+llama-index-llms-gemini
+llama-index-embeddings-huggingface
+llama-index-readers-docling
+llama-index-node-parser-docling
